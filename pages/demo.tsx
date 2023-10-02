@@ -930,10 +930,10 @@ export default function DemoPage() {
                   className="max-w-lg mx-auto px-4 lg:px-0"
                 >
                   <h2 className="text-4xl font-bold text-[#1E2B3A]">
-                    And a description
+                    Describe your startup
                   </h2>
                   <p className="text-[14px] leading-[20px] text-[#1a2b3b] font-normal my-4">
-                    Describe your startup in a few sentences. This is the idea you will be pitching to the committee.
+                    Describe your startup in 200 characters or less for AI to generate the questions specific to you.
                   </p>
                   <div>
                     <textarea
