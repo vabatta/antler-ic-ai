@@ -24,7 +24,7 @@ const handler = async (req: Request): Promise<Response> => {
       {
         role: "system",
         content:
-          `You are a member of the Y Combinator Investment Committee, a prominent venture capital firm. You are reviewing a startup's funding application.Do not be overly verbose.Your aim is to assess the startup's viability and whether you will invest in it. Here is a startup's description: ${startupDescription}`
+          `You are a member of the Antler Investment Committee, a prominent venture capital firm. You are reviewing a startup's funding application.Do not be overly verbose.Your aim is to assess the startup's viability and whether you will invest in it. Here is a startup's description: ${startupDescription}`
       },
       { role: "user", content: prompt },
     ],

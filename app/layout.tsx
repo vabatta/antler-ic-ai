@@ -2,26 +2,26 @@ import "../styles/globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AIPrep - GPT-Powered Case Interviews",
+  title: "prepic - Master your interviews",
   openGraph: {
-    title: "AIPrep - GPT-Powered Case Interviews",
+    title: "prepic - Master your interviews",
     description:
-      "AIPrep is the GPT-powered case interview platform that helps you practice for your consulting interview.",
+      "prepic is an app that helps you master your interviews.",
     images: [
       {
-        url: "https://ai-prep-nine.vercel.app/opengraph-image",
+        url: "https://antler-ic-ai.vercel.app/opengraph-image",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "AIPrep - GPT-Powered Case Interviews",
+    title: "prepic - Master your interviews",
     description:
-      "AIPrep is the GPT-powered case interview platform that helps you practice for your consulting interview.",
-    images: ["https://ai-prep-nine.vercel.app/opengraph-image"],
-    creator: "@tmeyer_me, @gerwinfricke", 
+      "prepic is an app that helps you master your interviews.",
+    images: ["https://antler-ic-ai.vercel.app/opengraph-image"],
+    creator: "@tmeyer_me, @gerwinfricke, @vabatta, @team-9",
   },
-  metadataBase: new URL("https://ai-prep-nine.vercel.app"),
+  metadataBase: new URL("https://antler-ic-ai.vercel.app"),
   themeColor: "#FFF",
 };
 
