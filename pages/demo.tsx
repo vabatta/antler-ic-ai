@@ -295,10 +295,8 @@ export default function DemoPage() {
             const { value, done: doneReading } = await reader.read();
             done = doneReading;
             const chunkValue = decoder.decode(value);
-            console.log(chunkValue)
             setGeneratedFeedback((prev: any) => prev + chunkValue);
           }
-          console.log(generatedFeedback)
         }
       } else {
         console.error("Upload failed.");
@@ -332,38 +330,6 @@ export default function DemoPage() {
     <AnimatePresence>
       {step === 3 ? (
         <div className="w-full min-h-screen flex flex-col px-4 pt-2 pb-8 md:px-8 md:py-2 bg-[#FCFCFC] relative overflow-x-hidden">
-          <p className="absolute w-full top-0 h-[60px] flex flex-row justify-between -ml-4 md:-ml-8">
-            <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium hidden sm:block">
-              demo interview
-            </span>
-            <span className="text-sm text-[#1a2b3b] font-medium opacity-20 hidden xl:block">
-              demo interview
-            </span>
-          </p>
           {completed ? (
             <div className="w-full flex flex-col max-w-[1080px] mx-auto mt-[10vh] overflow-y-auto pb-8 md:pb-12">
               <motion.div
@@ -442,7 +408,7 @@ export default function DemoPage() {
                     Feedback
                   </h2>
                   <div className="mt-4 text-sm flex gap-2.5 rounded-lg border border-[#EEEEEE] bg-[#FAFAFA] p-4 leading-6 text-gray-900 min-h-[100px]">
-                    <p className="prose prose-sm max-w-none">
+                    <p className="prose prose-sm max-w-none whitespace-pre-line">
                       {generatedFeedback}
                     </p>
                   </div>
